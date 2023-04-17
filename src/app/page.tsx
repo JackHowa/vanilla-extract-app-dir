@@ -1,6 +1,7 @@
 import { Illustration } from './components/illustration'
 
-import * as styles from './styles.css.ts'
+// not importing testNotHere style
+import { footer, details, link, git } from './styles.css.ts'
 
 export default function Home() {
   return (
@@ -8,12 +9,12 @@ export default function Home() {
       <main>
         <Illustration />
       </main>
-      <footer className={styles.footer}>
-        <div className={styles.details}>
+      <footer className={footer}>
+        <div className={details}>
           <p>
             Built with{' '}
             <a
-              className={styles.link}
+              className={link}
               target="_blank"
               href="https://nextjs.org"
               rel="noreferrer"
@@ -22,7 +23,7 @@ export default function Home() {
             </a>{' '}
             and{' '}
             <a
-              className={styles.link}
+              className={link}
               target="_blank"
               href="https://vanilla-extract.style/"
               rel="noreferrer"
@@ -34,7 +35,7 @@ export default function Home() {
         <a
           target="_blank"
           href="https://github.com/SuttonJack/vanilla-extract-app-dir"
-          className={styles.git}
+          className={git}
         >
           <svg
             width="24"
